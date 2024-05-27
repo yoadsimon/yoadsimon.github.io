@@ -1,62 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melina's Application - Support and Promotion</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #005A9C;
-            color: #ffffff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header p {
-            margin: 10px 0 0;
-        }
-        section {
-            padding: 20px;
-            border-bottom: 1px solid #cccccc;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-        }
-        a {
-            color: #0066cc;
-        }
-        a:hover {
-            color: #0050a0;
-        }
-    </style>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Melina's Application Support Page</h1>
-        <p>Your guide to using and maximizing Melina's app.</p>
-    </header>
-    <section>
-        <h2>Support</h2>
-        <p>If you have any questions or need help, please contact us at <a href="mailto:support@melinasapp.com">support@melinasapp.com</a></p>
-    </section>
-    <section>
-        <h2>Privacy Policy</h2>
-        <p>Read our <a href="privacy-policy.html">Privacy Policy</a> to understand how we handle your data.</p>
-    </section>
-    <footer>
-        <p>Thank you for using Melina's Application!</p>
-    </footer>
+<nav id="desktop-nav">
+    <div class="logo">Yoad Simon</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Yoad Simon</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img
+                src="./assets/profile.JPG"
+                alt="John Doe profile picture"
+                class="project-img"
+        />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yoad Simon</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+            <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/resume-example.pdf')"
+            >
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img
+                    src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/yoadsimon'"
+            />
+            <img
+                    src="./assets/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/yoadsimon'"
+            />
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img
+                    src="assets/profile.JPG"
+                    alt="Profile picture"
+                    class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img
+                            src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>1 year <br/>Software Development</p>
+                </div>
+                <div class="details-container">
+                    <img
+                            src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>B.Sc. Bachelors Degree<br/>M.S. Masters Degree</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    <!--                    I am a software developer with a passion for creating innovative-->
+                    <!--                    solutions. I have experience in Python, AWS, NoSQL, SQL, Swift, and-->
+                    <!--                    Git. I am also familiar with machine learning, deep learning, and big-->
+                    <!--                    data. I am looking for opportunities to grow and develop my skills-->
+                    <!--                    further.-->
+
+                    I am a passionate developer with over a year of experience at a dynamic startup, specializing in
+                    creating online scrapers and working with various databases like MongoDB, Redis, SQL, and S3. I have
+                    hands-on experience with AWS, Docker, as well as ML and DL models, and recently launched my own game
+                    app, "Melina's", on the App Store. Skilled in Python, with a strong foundation in CSS, HTML,
+                    JavaScript, TypeScript, and C, I hold a Bachelor's degree in Mathematics and am nearing completion
+                    of my second Masters. Eager to learn and grow, I truly love what I do.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+    />
+</section>
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Software Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>PYTHON</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>AWS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>NoSQL</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Swift</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Software Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>ML</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>DL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Big Data</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+    />
+</section>
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                            src="./assets/Melina's.png"
+                            alt="Project 2"
+                            class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Melina's</h2>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://yoadsimon.github.io/'"
+                    >
+                        Website
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://apps.apple.com/il/app/melinas/id6502263471'"
+                    >
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                            src="./assets/workInProcess.png"
+                            alt="Project 2"
+                            class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Yoad's Translate</h2>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+<!--            <div class="details-container color-container">-->
+<!--                <div class="article-container">-->
+<!--                    <img-->
+<!--                            src="./assets/project-3.png"-->
+<!--                            alt="Project 3"-->
+<!--                            class="project-img"-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <h2 class="experience-sub-title project-title">Project Three</h2>-->
+<!--                <div class="btn-container">-->
+<!--                    <button-->
+<!--                            class="btn btn-color-2 project-btn"-->
+<!--                            onclick="location.href='https://github.com/'"-->
+<!--                    >-->
+<!--                        Github-->
+<!--                    </button>-->
+<!--                    <button-->
+<!--                            class="btn btn-color-2 project-btn"-->
+<!--                            onclick="location.href='https://github.com/'"-->
+<!--                    >-->
+<!--                        Live Demo-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+    />
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img
+                    src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:yoadsimon@gmial.ocm">yoad@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/yoadsimon">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
