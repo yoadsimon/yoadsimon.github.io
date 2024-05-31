@@ -153,11 +153,15 @@ section {
 
 /* HOME SECTION */
 #home {
+
+    position: relative;
+
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 80vh;
 }
+
 
 .section__pic-container {
     display: flex;
@@ -491,9 +495,3 @@ footer p {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
 }
-
-
-
-
-
-
