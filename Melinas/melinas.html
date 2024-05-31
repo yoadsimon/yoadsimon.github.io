@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melina's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Melina's</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Melina's</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="#support" onclick="toggleMenu()">Support</a></li>
+            <li><a href="#privacy-policy" onclick="toggleMenu()">Privacy Policy</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="home">
+    <div class="section__pic-container">
+        <img src="../assets/Melina's.png" alt="John Doe profile picture" class="project-img"/>
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Welcome to</p>
+        <h1 class="title">Melina's</h1>
+        <p class="section__text__p2">a language interaction application</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2"
+                    onclick="location.href='https://apps.apple.com/il/app/melinas/id6502263471'">Download now
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#gallery'"/>
+</section>
+<section id="gallery">
+    <div class="section__text">
+        <h1 class="title">Gallery</h1>
+    </div>
+    <div class="container">
+        <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/1.PNG" alt="Slide 1" class="sliderImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/2.PNG" alt="Slide 2" class="sliderImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/3.PNG" alt="Slide 3" class="sliderImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/4.PNG" alt="Slide 4" class="sliderImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/5.PNG" alt="Slide 5" class="sliderImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/6.PNG" alt="Slide 6" class="sliderImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./melinasAssets/7.PNG" alt="Slide 7" class="sliderImage">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#support'"/>
+</section>
+<section id="support">
+    <div class="section__text">
+        <h1 class="title">Support</h1>
+    </div>
+    <div class="support">
+        <p>If you have any questions or need help, please contact us at our <a href="mailto:app.melinas@gmail.com">support
+            mail</a>
+        </p>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#privacy-policy'"/>
+</section>
+<section id="privacy-policy">
+    <div class="section__text">
+        <h1 class="title">Privacy Policy</h1>
+    </div>
+    <div class="privacy-policy">
+        <p>Read our <a href="privacy-policy.html">Privacy Policy</a> to understand how we handle your data.</p>
+        <button class="btn btn-color-2" onclick="location.href='privacy-policy.html'">Read Privacy Policy</button>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="../assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+            <p><a href="mailto:yoadsimon@gmial.ocm">yoad@gmail.com</a></p>
+        </div>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#home'"/>
+
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
