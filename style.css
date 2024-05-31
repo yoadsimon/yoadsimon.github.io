@@ -176,6 +176,24 @@ section {
     margin: auto 0;
 }
 
+/*#home .new {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 400px;  !* Scaling down the height for the shown radius *!*/
+/*    width: 400px;   !* Scaling down the width for the shown radius *!*/
+/*    margin: auto 0;*/
+/*    overflow: hidden; !* Ensures the child can't extend beyond the container *!*/
+/*    border-radius: 50%; !* Round container *!*/
+/*}*/
+
+/*#home .test {*/
+/*    position: relative;*/
+/*    height: 240px; !* Size of the original photo being used for cropping *!*/
+/*    width: 240px; !* Size of the original photo being used for cropping *!*/
+/*    transform: scale(2); !* Scale by a factor of 2 to double size of the cut-out part *!*/
+/*}*/
+
 .section__text {
     align-self: center;
     text-align: center;
