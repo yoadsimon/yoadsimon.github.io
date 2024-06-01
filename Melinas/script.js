@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true,
         slidesPerView: 'auto',
         coverflowEffect: {
-            rotate: 30, // Rotation angle for each slide.
-            stretch: 10, // Stretch space between slides.
-            depth: 150, // Depth of slides.
-            modifier: 1, // Effect multiplier.
-            slideShadows: false, // Disable shadows.
+            rotate: 30,
+            stretch: 10,
+            depth: 150,
+            modifier: 1,
+            slideShadows: false,
         },
         pagination: {
             el: '.swiper-pagination',
@@ -26,13 +26,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 spaceBetween: 10,
             },
             640: {
-                slidesPerView: 3, // View three slides at a time for screens >= 640px.
+                slidesPerView: 3,
                 spaceBetween: 30,
             },
             1024: {
-                slidesPerView: 5, // View five slides at a time for screens >= 1024px.
+                slidesPerView: 5,
                 spaceBetween: 40,
             }
         }
     });
 });
+
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
