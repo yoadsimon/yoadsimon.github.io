@@ -363,6 +363,9 @@ footer p {
 }
 
 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: center;
     background-size: cover;
     width: 200px;
@@ -370,6 +373,8 @@ footer p {
 }
 
 .sliderImage {
+    justify-content: center;
+    align-items: center;
     display: block;
     width: 100%;
     height: 100%;
@@ -382,10 +387,10 @@ footer p {
 }
 
 .swiper-button-next, .swiper-button-prev {
-    color: var(--primary);
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    padding: 10px;
+    display: none !important;
+    /*color: #9B481C !important;*/
+    /*border-radius: 50%;*/
+    /*padding: 10px;*/
 }
 
 /* Add perspective to the slider and center align */
@@ -405,18 +410,16 @@ footer p {
 
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
-    .swiper-slide,
-    .sliderImage {
+    .swiper-slide, .sliderImage {
         width: 150px;
-        height: auto;
+        height: 300px;
     }
 }
 
 @media (max-width: 480px) {
-    .swiper-slide,
-    .sliderImage {
+    .swiper-slide, .sliderImage {
         width: 120px;
-        height: auto;
+        height: 240px;
     }
 }
 
