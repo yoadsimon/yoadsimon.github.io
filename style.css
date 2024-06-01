@@ -159,7 +159,6 @@ section {
 .section-container {
     display: flex;
 }
-
 /* HOME SECTION */
 #home {
     position: relative;
@@ -176,23 +175,9 @@ section {
     margin: auto 0;
 }
 
-/*#home .new {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    height: 400px;  !* Scaling down the height for the shown radius *!*/
-/*    width: 400px;   !* Scaling down the width for the shown radius *!*/
-/*    margin: auto 0;*/
-/*    overflow: hidden; !* Ensures the child can't extend beyond the container *!*/
-/*    border-radius: 50%; !* Round container *!*/
-/*}*/
-
-/*#home .test {*/
-/*    position: relative;*/
-/*    height: 240px; !* Size of the original photo being used for cropping *!*/
-/*    width: 240px; !* Size of the original photo being used for cropping *!*/
-/*    transform: scale(2); !* Scale by a factor of 2 to double size of the cut-out part *!*/
-/*}*/
+#home .about-pic {
+    border-radius: 2rem;
+}
 
 .section__text {
     align-self: center;
@@ -222,6 +207,52 @@ section {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 1rem;
+        padding: 1rem;
+        height: auto; /* Adjust height for better fit on mobile */
+    }
+
+    #home .section__pic-container {
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #home .about-pic {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .section__text {
+        align-self: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .title {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
 
 /* ICONS */
@@ -301,10 +332,6 @@ section {
     display: flex;
 }
 
-.about-pic {
-    border-radius: 2rem;
-}
-
 .arrow {
     position: absolute;
     right: -5rem;
@@ -331,6 +358,10 @@ section {
     height: 400px;
     width: auto;
     margin: auto 0;
+}
+
+#about .about-pic {
+    border-radius: 2rem;
 }
 
 /* EXPERIENCE SECTION */
