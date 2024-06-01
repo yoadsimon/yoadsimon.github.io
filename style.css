@@ -159,6 +159,7 @@ section {
 .section-container {
     display: flex;
 }
+
 /* HOME SECTION */
 #home {
     position: relative;
@@ -212,11 +213,12 @@ section {
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     #home {
+        width: 100%;
         flex-direction: column;
         gap: 2rem;
         margin: 0 1rem;
         padding: 1rem;
-        height: auto; /* Adjust height for better fit on mobile */
+        height: auto;
     }
 
     #home .section__pic-container {
@@ -232,6 +234,8 @@ section {
     }
 
     .section__text {
+        width: 100%;
+        height: auto;
         align-self: center;
         text-align: center;
         margin-bottom: 1rem;
@@ -246,12 +250,36 @@ section {
     }
 
     .btn-container {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 0.5rem;
     }
 
     .btn {
-        width: 100%;
+        width: auto;
+    }
+
+    .btn-color-1:hover,
+    .btn-color-2:hover {
+        cursor: pointer;
+    }
+
+    .btn-color-1,
+    .btn-color-2:hover {
+        background: rgb(53, 53, 53);
+        color: white;
+    }
+
+    .btn-color-1:hover {
+        background: rgb(0, 0, 0);
+    }
+
+    .btn-color-2 {
+        background: none;
+    }
+
+    .btn-color-2:hover {
+        border: rgb(255, 255, 255) 0.1rem solid;
     }
 }
 
