@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
     #home {
-        height: 83vh;
+        height: auto;
         margin-bottom: 6rem;
     }
 
@@ -8,9 +8,8 @@
         flex-wrap: wrap;
     }
 
-    #contact,
-    #home {
-        height: fit-content;
+    #contact, #home {
+        height: auto;
     }
 }
 
@@ -23,13 +22,11 @@
         display: flex;
     }
 
-    #experience,
-    .experience-details-container {
+    #experience, .experience-details-container {
         margin-top: 2rem;
     }
 
-    #home,
-    .section-container {
+    #home, .section-container {
         display: block;
     }
 
@@ -37,9 +34,8 @@
         display: none;
     }
 
-    section,
-    .section-container {
-        height: fit-content;
+    section, .section-container {
+        height: auto;
     }
 
     section {
@@ -48,7 +44,7 @@
 
     .section__pic-container {
         width: 275px;
-        height: 275px;
+        height: auto;
         margin: 0 auto 2rem;
     }
 
@@ -58,13 +54,12 @@
 }
 
 @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-        height: 40vh;
+    #contact, footer {
+        height: auto;
     }
 
     #home {
-        height: 83vh;
+        height: auto;
         margin-bottom: 0;
     }
 
@@ -77,9 +72,7 @@
         margin-bottom: 2rem;
     }
 
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
+    .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
 
@@ -87,8 +80,7 @@
         margin: 0;
     }
 
-    .contact-info-container p,
-    .nav-links li a {
+    .contact-info-container p, .nav-links li a {
         font-size: 1rem;
     }
 
@@ -108,7 +100,7 @@
 
     .section__pic-container {
         width: auto;
-        height: 46vw;
+        height: auto;
         justify-content: center;
     }
 
@@ -122,5 +114,16 @@
 
     .text-container {
         text-align: justify;
+    }
+
+    .experience-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
