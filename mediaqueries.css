@@ -8,6 +8,17 @@
         flex-wrap: wrap;
     }
 
+    #home .section__pic-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #home .about-pic {
+        display: block;
+        margin: 0 auto;
+    }
+
     #contact, #home {
         height: auto;
     }
